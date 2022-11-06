@@ -8,3 +8,12 @@ body{
     margin: 0 auto;
     max-width: 1080px;
 }
+//кастомная анимация для блока help
+[data-aos="help-circles-color"] {
+    &.aos-animate {
+        background-color: #F47A37;
+        /* background-color: radial-gradient(50% 50% at 50% 50%, #F7A70C 0%, #E7742E 100%); */
+        color: #fff;
+    }
+  
+  }

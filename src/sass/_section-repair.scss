@@ -1,0 +1,167 @@
+.repair {
+    background-color: #fff;
+    padding-bottom: 60px;
+
+    &__inner {
+        padding-top: 40px;
+
+    }
+
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 40px;
+    }
+
+    &__item {
+        width: 344px;
+        position: relative;
+        z-index: 0;
+
+        &::before {
+            position: absolute;
+            content: "";
+            background-color: #000;
+            width: 100%;
+            height: 1px;
+            top: 94px;
+            left: 0;
+            z-index: -1;
+        }
+    }
+
+    &__item-img {
+        background-repeat: no-repeat;
+        width: 160px;
+        height: 95px;
+        margin: 0 auto;
+
+        &-computer {
+            background-image: url('../img/repair-items/computers.svg');
+            background-repeat: no-repeat;
+            background-color: #fff;
+
+        }
+
+        &-notebooks {
+            background-image: url('../img/repair-items/notebooks.svg');
+            background-repeat: no-repeat;
+            background-color: #fff;
+
+        }
+
+        &-monoblocks {
+            background-image: url('../img/repair-items/monoblocks.svg');
+            background-repeat: no-repeat;
+            background-color: #fff;
+
+        }
+
+        &-apple {
+            background-image: url('../img/repair-items/apple.svg');
+            background-repeat: no-repeat;
+            background-color: #fff;
+
+        }
+
+        &-upgrade {
+            background-image: url('../img/repair-items/upgrade.svg');
+            background-repeat: no-repeat;
+            background-color: #fff;
+
+        }
+
+        &-windows {
+            background-image: url('../img/repair-items/windows.svg');
+            background-repeat: no-repeat;
+            background-color: #fff;
+
+        }
+
+        &-viruses {
+            background-image: url('../img/repair-items/viruses.svg');
+            background-repeat: no-repeat;
+            background-color: #fff;
+
+        }
+
+        &-internet {
+            background-image: url('../img/repair-items/internet.svg');
+            background-repeat: no-repeat;
+            background-color: #fff;
+
+        }
+
+        &-corporate {
+            background-image: url('../img/repair-items/corporate.svg');
+            background-repeat: no-repeat;
+            background-color: #fff;
+
+        }
+
+    }
+
+
+
+    &__item-title {
+        margin-top: 28px;
+        text-align: center;
+        font-size: 29px;
+        font-weight: 500;
+        line-height: 34px;
+        text-transform: uppercase;
+        margin-bottom: 16px;
+        padding: 0 10px;
+
+    }
+
+    &__item-list {
+        margin-bottom: 28px;
+        padding-left: 30px;
+        color: #0B1427;
+    }
+
+    &__item-text {
+        font-size: 18px;
+        font-weight: 400px;
+        line-height: 25px;
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: "";
+            background-image: url("../img/repair-items/sumbol.svg");
+            background-repeat: no-repeat;
+            width: 18px;
+            height: 25px;
+            top: 5px;
+            left: -30px;
+        }
+    }
+
+    &__item-btn {
+        margin: 0 auto;
+        display: block;
+        background-color: $btn;
+        color: #000;
+        padding: 15px 32px;
+        font-size: 18px;
+        font-weight: 600;
+        text-transform: uppercase;
+        text-align: center;
+        align-items: center;
+        border-radius: 10px;
+        width: 304px;
+
+        &:hover {
+            background-color: radial-gradient(50% 50% at 50% 50%, #F7A70C 0%, #E7742E 100%);
+            /* background-color: $accent; */
+            transition-duration: .5s;
+
+        }
+    }
+
+
+
+}
+
