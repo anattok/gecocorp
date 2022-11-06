@@ -1,0 +1,242 @@
+.footer {
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 3px solid $accent;
+    }
+
+    &__logo {
+        margin-bottom: 60px;
+    }
+
+    &__ip {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 16px;
+        color: #fff;
+        margin-bottom: 24px;
+    }
+
+    &__text {
+        max-width: 252px;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 16px;
+        color: #B4B4B4;
+        margin-bottom: 40px;
+    }
+
+    &__menu {
+        width: 140px;
+        padding-top: 23px;
+
+        &-item {
+            margin-bottom: 16px;
+
+            &-link {
+                color: #fff;
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 20px;
+                text-transform: uppercase;
+
+                &:hover {
+                    color: $accent;
+                    transition-duration: .3s;
+                }
+            }
+        }
+
+    }
+
+    &__services {
+        padding-top: 23px;
+        color: #fff;
+
+        &-title {
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 20px;
+            margin-bottom: 14px;
+            text-transform: uppercase;
+        }
+
+        &-item {
+            margin-bottom: 14px;
+
+            &-link {
+                color: #fff;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 21px;
+
+                &:hover {
+                    color: $accent;
+                    transition-duration: .3s;
+                }
+            }
+        }
+    }
+
+    &__contacts {
+        padding-top: 23px;
+        color: #fff;
+
+        &-tel {
+            margin-bottom: 19px;
+        }
+
+        &-tel-item {
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 32px;
+            margin-bottom: 5px;
+            padding-left: 40px;
+            position: relative;
+
+            &::before {
+                position: absolute;
+                content: "";
+                background-image: url('../img/top-arrow-right.png');
+                width: 32px;
+                height: 32px;
+                top: 0;
+                left: 0;
+            }
+        }
+
+        &-adress {
+            font-size: 16px;
+            font-weight: 500px;
+            line-height: 21px;
+            margin-bottom: 8px;
+            padding-left: 30px;
+            position: relative;
+
+            &::before {
+                position: absolute;
+                content: "";
+                background-image: url('../img/map.svg');
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 20px;
+                height: 20px;
+                top: 2px;
+                left: 4px;
+
+            }
+        }
+
+        &-mail {
+            font-size: 16px;
+            font-weight: 500px;
+            line-height: 21px;
+            margin-bottom: 8px;
+            padding-left: 30px;
+            position: relative;
+
+            &::before {
+                position: absolute;
+                content: "";
+                background-image: url('../img/mail.svg');
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 20px;
+                height: 20px;
+                top: 0;
+                left: 0;
+
+            }
+
+        }
+
+        &-time {
+            font-size: 16px;
+            font-weight: 500px;
+            line-height: 21px;
+            margin-bottom: 36px;
+            padding-left: 30px;
+            position: relative;
+
+            &::before {
+                position: absolute;
+                content: "";
+                background-image: url('../img/time.svg');
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 20px;
+                height: 20px;
+                top: 0;
+                left: 0;
+
+            }
+
+        }
+
+        &-links {
+            display: flex;
+        }
+
+        &-link {
+            padding-right: 20px;
+        }
+    }
+
+    &__bottom {
+        margin-top: 19px;
+        margin-bottom: 26px;
+        display: flex;
+        justify-content: space-between;
+
+        &-wrapper {
+            display: flex;
+        }
+    }
+
+    &__link a {
+        padding-left: 20px;
+        color: #fff;
+        font-weight: 500;
+        position: relative;
+        &::before {
+            position: absolute;
+            content: "";
+            background-image: url('../img/c.svg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 14px;
+            height: 14px;
+            top: 2px;
+            left: 0;
+        }
+    }
+
+    &__link span {
+        color: $accent;
+    }
+    &__map-link{
+        color: #fff;
+        &:hover {
+            color: $accent;
+            transition-duration: .3s;
+        }
+    }
+    &__politic-link{
+        color: #fff;
+        margin-left: 40px;
+        position: relative;
+        &:hover {
+            color: $accent;
+            transition-duration: .3s;
+        }
+        &::before {
+            position: absolute;
+            content: "";
+            width: 3px;
+            height: 16px;
+            background-color: $accent;
+            top: 2px;
+            left: -20px;
+        }
+    }
+}
