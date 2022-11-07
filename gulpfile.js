@@ -10,6 +10,7 @@ const html = require('./task/html.js');
 const scss = require('./task/scss.js');
 const js = require('./task/js.js');
 const img = require('./task/img.js');
+const fonts = require('./task/fonts.js');
 const ghpages = require('./task/ghpages.js');
 
 
@@ -35,6 +36,7 @@ const watcher = () =>{
  exports.html = html;
  exports.js = js;
  exports.img = img;
+ exports.fonts = fonts;
  exports.ghpages = ghpages;
 
 
@@ -42,6 +44,6 @@ const watcher = () =>{
 //Сборка
 exports.dev = series(
     clear,
-    parallel(html, scss, js, img),
+    parallel(html, scss, js, img, fonts),
     parallel(watcher, server)
 );

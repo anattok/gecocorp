@@ -33,5 +33,10 @@ module.exports = {
         src: pathSrc + "/img/**/*.{png,jpg,jpeg,gif,svg}",
         watch: pathSrc + "/img/**/*.{png,jpg,jpeg,gif,svg}",
         dest: pathDest + "/img"
+    },
+    fonts:{
+        src: pathSrc + "/fonts/**/*",
+        watch: pathSrc + "/fonts/**/*",
+        dest: pathDest + "/fonts"
     }
 }
