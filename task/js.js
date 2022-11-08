@@ -8,10 +8,12 @@ const app = require("../config/app.js");
 const plumber = require("gulp-plumber");
 const notify = require("gulp-notify");
 const babel = require("gulp-babel");
+const concat= require("gulp-concat");
 const uglify = require("gulp-uglify");
 //Обработка Javascript
 const js = () =>{
-    return src(path.js.src, { sourcemaps: true })
+    return src( path.js.src,{ sourcemaps: true }
+        )
     .pipe(plumber({
         errorHandler: notify.onError(error =>({
             title: "Проверь js",
@@ -19,6 +21,7 @@ const js = () =>{
         }))
     }))
     .pipe(babel())
+    .pipe(concat('main.js'))
     .pipe(uglify())
     .pipe(dest(path.js.dest, { sourcemaps: true }));
 }
