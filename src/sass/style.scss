@@ -10,6 +10,7 @@
 @import 'section-footer';
 @import 'section-questionwhy';
 @import 'reviews';
+@import 'section-team';
 @import 'media';
 
 
@@ -70,5 +71,6 @@
         font-weight: 500;
         font-size: 48px;
         line-height: 57px;
+        text-transform: uppercase;
     }
 
