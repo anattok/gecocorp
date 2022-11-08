@@ -1,0 +1,99 @@
+.question-when {
+    padding-top: 40px;
+    
+
+    &__top {
+        background-color: $bg;
+    }
+
+    &__text {
+        border-top: 3px solid $accent;
+        border-bottom: 3px solid $accent;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        margin-bottom: 40px;
+        color: #fff;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 32px;
+        padding-left: 136px;
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: "";
+            background-image: url('../img/Attention.svg');
+            width: 102px;
+            height: 96px;
+            top: 45px;
+            left: 0;
+
+        }
+
+    }
+
+    &__main {
+        padding-bottom: 60px;
+        background-color: #fff;
+    }
+
+    &__title {
+        padding-top: 40px;
+        margin-bottom: 32px;
+        color: $accent;
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 24px;
+    }
+
+    &__problem {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 28px;
+        max-width: 300px;
+        height: 56px;
+
+    }
+
+    &__solution {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26px;
+        max-width: 736px;
+        height: 150px;
+    }
+
+    &__bottom-text {
+        margin-bottom: 40px;
+
+    }
+
+    &__btn-link {
+        margin: 0 auto;
+        max-width: 380px;
+        padding: 18px 32px;
+        background-color: radial-gradient(50% 50% at 50% 50%, #F7A70C 0%, #E7742E 100%);
+        border-radius: 10px;
+        color: #000;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        text-transform: uppercase;
+        color: #000;
+        display: block;
+        position: relative;
+        &::before {
+            position: absolute;
+            content: "";
+            background: url("../img/arrow-right-black.svg");
+            width: 21px;
+            height: 18px;
+            top: 19px;
+            right: 26px;
+        }
+        
+    }
+}
